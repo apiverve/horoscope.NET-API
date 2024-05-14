@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.Horoscope</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/horoscope</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Horoscope is a simple tool for getting horoscope data. It returns the horoscope for the day.</Description>
+    <RepositoryUrl>https://github.com/apiverve/horoscope-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>horoscope; horoscope api; horoscope tool; horoscope software; horoscope service; horoscope library; horoscope sdk; horoscope code; horoscope script; horoscope program; horoscope application; horoscope app; horoscope utility; horoscope helper; horoscope helper tool; horoscope helper software; horoscope helper service; horoscope helper library; horoscope helper sdk; horoscope helper code; horoscope helper script; horoscope helper program; horoscope helper application; horoscope helper app; horoscope helper tool; horoscope helper utility; horoscope helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
