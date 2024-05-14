@@ -1,21 +1,47 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
+using Newtonsoft.Json;
 
 namespace APIVerve
 {
-    using Newtonsoft.Json;
+public class data
+{
+    [JsonProperty("color")]
+    public string color { get; set; }
+
+    [JsonProperty("compatibility")]
+    public string[] compatibility { get; set; }
+
+    [JsonProperty("date")]
+    public string date { get; set; }
+
+    [JsonProperty("horoscope")]
+    public string horoscope { get; set; }
+
+    [JsonProperty("luckyNumber")]
+    public int luckyNumber { get; set; }
+
+    [JsonProperty("luckyTime")]
+    public string luckyTime { get; set; }
+
+    [JsonProperty("mood")]
+    public string mood { get; set; }
+
+    [JsonProperty("sign")]
+    public string sign { get; set; }
+
+}
 
 public class ResponseObj
 {
     [JsonProperty("status")]
-    public string Status { get; set; }
+    public string status { get; set; }
 
     [JsonProperty("error")]
-    public string Error { get; set; }
+    public object error { get; set; }
 
     [JsonProperty("data")]
-    public object Data { get; set; }
+    public data data { get; set; }
 
 }
 
