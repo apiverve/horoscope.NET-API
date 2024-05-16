@@ -82,7 +82,7 @@ var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    var jsonResponse = JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented);
     Console.WriteLine(jsonResponse);
 }
 ```
@@ -94,16 +94,16 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "color": "purple",
+    "color": "pink",
     "compatibility": [
       "leo",
       "sagittarius"
     ],
-    "date": "Fri May 10 2024",
-    "horoscope": "Today is a good day to delve into your creative side, Aries. Allow yourself to explore new hobbies or projects that spark your imagination. Your intuition is strong right now, so trust your gut when making decisions. Focus on self-care and take time to recharge your energy. It's important to set boundaries with others to protect your own well-being. Embrace new opportunities that come your way and don't be afraid to step out of your comfort zone.",
-    "luckyNumber": 38,
-    "luckyTime": "10:00 PM",
-    "mood": "happy",
+    "date": "Wed May 15 2024",
+    "horoscope": "Today is a day to focus on your goals and take practical steps towards them. You may feel a burst of energy and determination to make things happen. Trust your instincts and don't be afraid to take the lead. Your creativity and passion will shine through, helping you to overcome any obstacles that come your way. Stay positive and keep pushing forward.",
+    "luckyNumber": 33,
+    "luckyTime": "5:00 PM",
+    "mood": "sad",
     "sign": "aries"
   }
 }
