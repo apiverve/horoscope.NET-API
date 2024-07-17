@@ -94,17 +94,22 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "color": "pink",
+    "color": "orange",
     "compatibility": [
       "leo",
       "sagittarius"
     ],
-    "date": "Wed May 15 2024",
-    "horoscope": "Today is a day to focus on your goals and take practical steps towards them. You may feel a burst of energy and determination to make things happen. Trust your instincts and don't be afraid to take the lead. Your creativity and passion will shine through, helping you to overcome any obstacles that come your way. Stay positive and keep pushing forward.",
-    "luckyNumber": 33,
-    "luckyTime": "5:00 PM",
-    "mood": "sad",
-    "sign": "aries"
+    "horoscope": "Today is the perfect day to focus on your personal growth and development, Aries. You may find yourself feeling creative and inspired, so make sure to channel that energy into something productive. Take some time to reflect on your goals and aspirations, and make a plan for how you can achieve them. Remember to stay true to yourself and trust your instincts as you move forward.",
+    "luckyNumber": 50,
+    "luckyTime": "2:00 PM",
+    "mood": "anxious",
+    "sign": "aries",
+    "zodiac": {
+      "element": "fire",
+      "name": "Aries",
+      "stone": "bloodstone",
+      "symbol": "♈"
+    }
   }
 }
 ```
