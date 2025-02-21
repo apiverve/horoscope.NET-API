@@ -32,9 +32,9 @@ From within Visual Studio:
 
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
-3. Click on Manage NuGet Packages...
+3. Click on Manage NuGet Packages..
 4. Click on the Browse tab and search for "APIVerve.API.Horoscope".
-5. Click on the APIVerve.API.Horoscope package, select the appropriate version in the right-tab and click Install.
+5. Click on the APIVerve.API.Horoscope package, click Install.
 
 
 ---
@@ -94,15 +94,15 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "color": "green",
+    "color": "purple",
     "compatibility": [
       "leo",
       "sagittarius"
     ],
-    "horoscope": "Today is a day for introspection and reflection, Aries. Take some time to connect with your inner self and listen to your intuition. You may find that the answers you seek are already within you. Trust your instincts and follow your heart.",
-    "luckyNumber": 4,
-    "luckyTime": "0:00 PM",
-    "mood": "tired",
+    "horoscope": "Today, you may feel a strong urge to expand your horizons and explore new opportunities. It's a great time to step out of your comfort zone and try something you've never done before. Trust your intuition and follow your instincts. Remember to stay grounded and maintain a sense of balance in all aspects of your life.",
+    "luckyNumber": 1,
+    "luckyTime": "1:00 PM",
+    "mood": "bored",
     "sign": "aries",
     "zodiac": {
       "element": "fire",
@@ -137,7 +137,7 @@ All usage of the APIVerve website, API, and services is subject to the [APIVerve
 ## License
 Licensed under the The MIT License (MIT)
 
-Copyright (&copy;) 2024 APIVerve, and Evlar LLC
+Copyright (&copy;) 2025 APIVerve, and EvlarSoft LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
