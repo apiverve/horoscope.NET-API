@@ -4,64 +4,67 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class zodiac
-{
-    [JsonProperty("element")]
-    public string element { get; set; }
+    /// <summary>
+    /// Zodiac data
+    /// </summary>
+    public class Zodiac
+    {
+        [JsonProperty("element")]
+        public string Element { get; set; }
 
-    [JsonProperty("name")]
-    public string name { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
 
-    [JsonProperty("stone")]
-    public string stone { get; set; }
+        [JsonProperty("stone")]
+        public string Stone { get; set; }
 
-    [JsonProperty("symbol")]
-    public string symbol { get; set; }
+        [JsonProperty("symbol")]
+        public string Symbol { get; set; }
 
-}
+    }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("color")]
+        public string Color { get; set; }
 
-public class data
-{
-    [JsonProperty("color")]
-    public string color { get; set; }
+        [JsonProperty("compatibility")]
+        public string[] Compatibility { get; set; }
 
-    [JsonProperty("compatibility")]
-    public string[] compatibility { get; set; }
+        [JsonProperty("horoscope")]
+        public string Horoscope { get; set; }
 
-    [JsonProperty("horoscope")]
-    public string horoscope { get; set; }
+        [JsonProperty("luckyNumber")]
+        public int LuckyNumber { get; set; }
 
-    [JsonProperty("luckyNumber")]
-    public int luckyNumber { get; set; }
+        [JsonProperty("luckyTime")]
+        public string LuckyTime { get; set; }
 
-    [JsonProperty("luckyTime")]
-    public string luckyTime { get; set; }
+        [JsonProperty("mood")]
+        public string Mood { get; set; }
 
-    [JsonProperty("mood")]
-    public string mood { get; set; }
+        [JsonProperty("sign")]
+        public string Sign { get; set; }
 
-    [JsonProperty("sign")]
-    public string sign { get; set; }
+        [JsonProperty("zodiac")]
+        public Zodiac Zodiac { get; set; }
 
-    [JsonProperty("zodiac")]
-    public zodiac zodiac { get; set; }
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-}
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-    [JsonProperty("error")]
-    public object error { get; set; }
-
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }
